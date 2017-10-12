@@ -256,7 +256,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.cause).to.eql(passedError);
                     expect(err.error).to.eql(passedError);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql('dummy response');
                     done();
                 });
 
@@ -360,7 +359,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.message).to.eql('404 - {"a":"b"}');
                     expect(err.error).to.eql(response.body);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(response);
                     done();
                 });
 
@@ -450,7 +448,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.cause).to.eql(cause);
                     expect(err.error).to.eql(cause);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
@@ -514,7 +511,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.cause).to.eql(cause);
                     expect(err.error).to.eql(cause);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
@@ -607,7 +603,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.message).to.eql('404 - {"a":"b"}');
                     expect(err.error).to.eql(res.body);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(JSON.stringify(res.body) + ' - ' + JSON.stringify(res) + ' - false');
                     done();
                 });
 
@@ -643,7 +638,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.cause).to.eql(cause);
                     expect(err.error).to.eql(cause);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
@@ -677,7 +671,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.message).to.eql('404 - {"a":"b"}');
                     expect(err.error).to.eql(res.body);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(JSON.stringify(res.body) + ' - ' + JSON.stringify(res) + ' - false');
                     done();
                 });
 
@@ -713,7 +706,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.cause).to.eql(cause);
                     expect(err.error).to.eql(cause);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
@@ -777,7 +769,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.message).to.eql('404 - {"a":"b"}');
                     expect(err.error).to.eql(res.body);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
@@ -955,7 +946,6 @@ describe('Promise-Core\'s Plumbing', function () {
                     expect(err.message).to.eql('404 - undefined');
                     expect(err.error).to.eql(res.body);
                     expect(err.options).to.eql(context._rp_options);
-                    expect(err.response).to.eql(res);
                     done();
                 });
 
